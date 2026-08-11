@@ -411,6 +411,11 @@
 	};
 };
 
+// Studio RPC and debug logging provide their own USB CDC devices when needed.
+&board_cdc_acm_uart {
+	status = "disabled";
+};
+
 &uart0 {
 	compatible = "nordic,nrf-uarte";
 	current-speed = <19200>;

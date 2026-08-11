@@ -324,3 +324,8 @@
 		reg = <0>;
 	};
 };
+
+// Studio RPC and debug logging provide their own USB CDC devices when needed.
+&board_cdc_acm_uart {
+	status = "disabled";
+};

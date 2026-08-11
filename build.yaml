@@ -62,19 +62,16 @@ include:
     board: xiao_ble//zmk
     shield: dya_dash_v3_left
     snippets:
-      - studio-rpc-usb-uart
       - left-trackball-v3
   - artifact: v3_left_switch
     board: xiao_ble//zmk
     shield: dya_dash_v3_left
     snippets:
-      - studio-rpc-usb-uart
       - left-switch-v3
   - artifact: v3_left_encoder
     board: xiao_ble//zmk
     shield: dya_dash_v3_left
     snippets:
-      - studio-rpc-usb-uart
       - left-encoder-v3
   - artifact: v3_left_reset
     board: xiao_ble//zmk
