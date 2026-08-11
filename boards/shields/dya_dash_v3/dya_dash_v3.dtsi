@@ -132,6 +132,8 @@
 	
 	kscan_matrix: kscan_matrix {
 		compatible = "zmk,kscan-gpio-charlieplex";
+		debounce-press-ms = <10>;
+		debounce-release-ms = <20>;
 		gpios = <&xiao_d 9 (GPIO_ACTIVE_HIGH)>
 		, <&gpio1 5  (GPIO_ACTIVE_HIGH)>
 		, <&gpio1 7  (GPIO_ACTIVE_HIGH)>
@@ -159,6 +161,16 @@
 		compatible = "zmk,input-listener";
 		device = <&peripheral_trackball>;
 		input-processors = <&mouse_runtime_input_processor_l &scroll_runtime_input_processor_l>;
+	};
+
+	trackball_layout: trackball_layout {
+		compatible = "cormoran,physical-layout-trackball";
+		display-name = "Trackball";
+		size = <180>;
+		x = <1200>;
+		y = <420>;
+		linked-device-identifiers = "mouse", "scroll";
+		linked-subsystems = "cormoran_rip", "cormoran_rip";
 	};
 	
 	split_inputs {
