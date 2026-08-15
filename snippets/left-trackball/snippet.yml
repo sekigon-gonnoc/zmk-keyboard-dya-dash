@@ -1,4 +1,4 @@
-name: left-trackball
+name: dya-dash-left-trackball
 append:
   EXTRA_DTC_OVERLAY_FILE: left-trackball.overlay
   EXTRA_CONF_FILE: left-trackball.conf

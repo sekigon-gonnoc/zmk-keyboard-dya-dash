@@ -13,6 +13,7 @@
 
 #include <behaviors/runtime-input-processor.dtsi>
 #include <behaviors/runtime-sensor-rotate.dtsi>
+#include <behaviors/runtime_macro.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
