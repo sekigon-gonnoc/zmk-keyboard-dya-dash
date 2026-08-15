@@ -146,22 +146,22 @@
 		device = <&peripheral_trackball>;
 		input-processors = <&mouse_runtime_input_processor_l &scroll_runtime_input_processor_l>;
 	};
-
+	
 	right_trackball_layout: right_trackball_layout {
 		compatible = "cormoran,physical-layout-trackball";
 		display-name = "Right Trackball";
-		size = <180>;
-		x = <1200>;
-		y = <420>;
+		size = <150>;
+		x = <1125>;
+		y = <460>;
 		linked-device-identifiers = "mouse", "scroll";
 		linked-subsystems = "cormoran_rip", "cormoran_rip";
 	};
 	left_trackball_layout: left_trackball_layout {
 		compatible = "cormoran,physical-layout-trackball";
 		display-name = "Left Trackball";
-		size = <180>;
-		x = <120>;
-		y = <420>;
+		size = <150>;
+		x = <220>;
+		y = <460>;
 		linked-device-identifiers = "lmouse", "lscroll";
 		linked-subsystems = "cormoran_rip", "cormoran_rip";
 	};
