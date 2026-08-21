@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/cormoran
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
   projects:
     - name: zmk-west-commands
       import: true
@@ -41,28 +43,46 @@ manifest:
           - trusted-firmware-m
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
     - name: zmk-feature-os-detection
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-feature-default-layer
-      revision: codex/custom-rpc-rewrite
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
       import: true
     - name: zmk-driver-animation
     - name: zmk-driver-ext-power-transient
     - name: zmk-module-ble-management
     - name: zmk-module-battery-history
     - name: zmk-module-runtime-input-processor
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-behavior-runtime-sensor-rotate
-      revision: feat/custom-settings-storage
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-module-settings-rpc
     - name: zmk-feature-input-stream
     - name: zmk-feature-module-physical-layout
     - name: zmk-feature-custom-settings
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-feature-runtime-combo
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-feature-runtime-macro
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-module-devtool
     - name: zmk-feature-studio-rpc-perf
     - name: zmk-feature-zephyr-setting-expose
     - name: zmk-feature-device-info
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-feature-kscan-diagnostics
     - name: zmk-feature-watchdog
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
     - name: zmk-feature-fast-keymap
+      remote: sekigon-gonnoc
+      revision: feat/firmware-memory-reduction
   self:
     path: config
